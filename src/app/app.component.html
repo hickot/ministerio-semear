@@ -1,0 +1,109 @@
+<header class="site-header">
+  <div class="brand">
+    <a routerLink="/" class="brand-link">
+      <img src="logo.png" alt="Ministério Semear Logo" class="logo-img" />
+      <span class="brand-text">
+        <strong>Ministério Semear</strong>
+        <small>Igreja em família</small>
+      </span>
+    </a>
+  </div>
+
+  <nav class="main-nav">
+    <div class="nav-group">
+      <span class="nav-title">Conteúdo</span>
+      <div class="nav-menu">
+        <a routerLink="/conteudo/palavras">Palavras de Deus</a>
+        <a routerLink="/conteudo/noticias">Notícias</a>
+        <a routerLink="/conteudo/leitura">Leitura</a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <span class="nav-title">Contato</span>
+      <div class="nav-menu">
+        <a routerLink="/contato/fale-conosco">Fale conosco</a>
+        <a routerLink="/contato/on-de-nos-encontrar">Onde nos encontrar</a>
+      </div>
+    </div>
+    <a class="nav-link" routerLink="/pedido-oracao">Pedido de Oração</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="login-button" routerLink="/admin">Entrar</a>
+  </div>
+</header>
+
+<main class="page-shell">
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Igreja Ministério Semear</p>
+      <h1>Um lugar para crescer em fé, servir com amor e caminhar em comunhão</h1>
+      <p>Somos uma família de fé que anuncia Jesus, acolhe pessoas e semeia esperança na cidade.</p>
+      <div class="hero-actions">
+        <a class="hero-button primary" routerLink="/pedido-oracao">Pedir oração</a>
+        <a class="hero-button secondary" routerLink="/contato/on-de-nos-encontrar">Planejar visita</a>
+      </div>
+    </div>
+
+    <aside class="service-card" aria-label="Horários de culto">
+      <p class="service-kicker">Programação</p>
+      <h2>Programação Semanal</h2>
+      <ul>
+        <li><strong>Domingo</strong><span>17:30 - Curso Conhecendo Jesus</span></li>
+        <li><strong>Domingo</strong><span>18h - EBD (Escola Bíblica Dominical)</span></li>
+        <li><strong>Domingo</strong><span>19h - Culto de Louvor e Adoração</span></li>
+        <li><strong>Quarta</strong><span>08h - Consagração</span></li>
+        <li><strong>Quarta</strong><span>19h - GPS (Grupo de Pastoreio Semear)</span></li>
+        <li><strong>Quinta</strong><span>20h - Culto de Louvor e Adoração</span></li>
+      </ul>
+      <a routerLink="/contato/on-de-nos-encontrar">Ver endereço</a>
+    </aside>
+  </section>
+
+  <section class="quick-links" aria-label="Acessos principais">
+    <a routerLink="/conteudo/palavras">
+      <span>Palavra</span>
+      <strong>Mensagens e reflexões bíblicas</strong>
+    </a>
+    <a routerLink="/conteudo/noticias">
+      <span>Comunidade</span>
+      <strong>Notícias, eventos e avisos</strong>
+    </a>
+    <a routerLink="/contato/fale-conosco">
+      <span>Cuidado</span>
+      <strong>Fale com a nossa equipe</strong>
+    </a>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div>
+      <strong>Ministério Semear</strong>
+      <p>© 2026 Ministério Semear. Todos os direitos reservados.</p>
+    </div>
+
+    <nav class="social-links" aria-label="Redes sociais">
+      <a href="https://www.instagram.com/ministeriosemear_sg/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Ministério Semear">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <circle cx="16.8" cy="7.2" r="0.8"></circle>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/ministeriosemearsg?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Ministério Semear">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.2 8.1h2.3V4.6c-.4-.1-1.8-.2-3.3-.2-3.3 0-5.5 2-5.5 5.7v3.2H4v3.9h3.7V24h4.4v-6.8h3.6l.6-3.9h-4.2V10.5c0-1.1.3-2.4 2.1-2.4z"></path>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@ministerioapostolicosemear5389" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Ministério Semear">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="6.5" width="18" height="11" rx="3"></rect>
+          <path d="M10.2 9.4v5.2l4.8-2.6-4.8-2.6z"></path>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</footer>
