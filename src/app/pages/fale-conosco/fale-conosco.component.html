@@ -1,11 +1,43 @@
 <section class="page">
   <div class="page-card">
     <h2>Fale conosco</h2>
-    <p>Estamos à disposição para ouvir você. Use um dos canais abaixo para nos enviar uma mensagem.</p>
-    <ul>
-      <li><strong>E-mail:</strong> <a href="mailto:contato@ministeriosemear.org">contato&#64;ministeriosemear.org</a></li>
-      <li><strong>Telefone:</strong> (00) 1234-5678</li>
-      <li><strong>Redes sociais:</strong> em breve adicionaremos links oficiais.</li>
-    </ul>
+    <p>Estamos à disposição para ouvir você. Preencha o formulário abaixo e entraremos em contato assim que possível.</p>
+    <p>
+      Você também pode enviar um e-mail para
+      <a href="mailto:ccm.semear@gmail.com">ccm.semear&#64;gmail.com</a>
+      ou enviar uma mensagem no WhatsApp para
+      <a href="https://wa.me/5521983720772" target="_blank" rel="noopener noreferrer">+55 (21) 98372-0772</a>.
+    </p>
+
+    <form class="contact-form">
+      <div class="form-grid">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome" autocomplete="name" required />
+        </label>
+
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label>
+          <span>Telefone</span>
+          <input type="tel" name="telefone" autocomplete="tel" required />
+        </label>
+
+        <label>
+          <span>Assunto</span>
+          <input type="text" name="assunto" required />
+        </label>
+      </div>
+
+      <label>
+        <span>Mensagem</span>
+        <textarea name="mensagem" rows="6" required></textarea>
+      </label>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
   </div>
 </section>
