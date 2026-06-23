@@ -26,13 +26,13 @@
     <a class="nav-link" routerLink="/pedido-oracao">Pedido de Oração</a>
   </nav>
 
-  <div class="nav-actions">
+  <div class="nav-actions" *ngIf="!isAdminPage">
     <a class="login-button" routerLink="/admin">Entrar</a>
   </div>
 </header>
 
-<main class="page-shell">
-  <section class="hero">
+<main class="page-shell" [class.admin-shell]="isAdminPage">
+  <section class="hero" *ngIf="!isAdminPage">
     <div class="hero-content">
       <p class="eyebrow">Igreja Ministério Semear</p>
       <h1>Um lugar para crescer em fé, servir com amor e caminhar em comunhão</h1>
@@ -58,7 +58,7 @@
     </aside>
   </section>
 
-  <section class="quick-links" aria-label="Acessos principais">
+  <section class="quick-links" aria-label="Acessos principais" *ngIf="!isAdminPage">
     <a routerLink="/conteudo/palavras">
       <span>Palavra</span>
       <strong>Mensagens e reflexões bíblicas</strong>
