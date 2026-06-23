@@ -124,3 +124,18 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 520px) {
+  .page {
+    padding-bottom: 1.5rem;
+  }
+
+  .home-links,
+  .home-links a {
+    width: 100%;
+  }
+
+  .home-links a {
+    text-align: center;
+  }
+}

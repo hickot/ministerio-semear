@@ -151,6 +151,12 @@
     radial-gradient(circle at top left, rgba(198, 155, 77, 0.2), transparent 34rem),
     linear-gradient(180deg, var(--cream) 0%, #eceff1 52%, #ffffff 100%);
   padding: clamp(1rem, 3vw, 2rem);
+  overflow-x: hidden;
+}
+
+.page-shell.admin-shell {
+  min-height: calc(100vh - 86px);
+  padding: 0;
 }
 
 .hero {
@@ -192,7 +198,7 @@
 .hero h1 {
   margin: 0;
   max-width: 780px;
-  font-size: clamp(2.15rem, 5vw, 4.6rem);
+  font-size: clamp(1.95rem, 8vw, 4.6rem);
   line-height: 1.02;
   color: #ffffff;
 }
@@ -465,6 +471,11 @@
   .site-header {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.9rem;
+  }
+
+  .brand-link {
+    justify-content: center;
   }
 
   .nav-group {
@@ -476,15 +487,28 @@
     width: 100%;
   }
 
+  .main-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .nav-menu a,
   .nav-link {
-    flex: 1 1 auto;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    min-height: 44px;
+    white-space: normal;
+    line-height: 1.2;
   }
 
   .nav-actions {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .page-shell {
@@ -493,9 +517,39 @@
 
   .hero-content {
     padding: 1.5rem;
+    width: 100%;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(1.75rem, 7vw, 2.2rem);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions {
     flex-direction: column;
   }
+
+  .hero-button,
+  .service-card a,
+  .login-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-text strong {
+    font-size: 0.95rem;
+  }
+
+  .brand-text small {
+    font-size: 0.72rem;
+  }
+
+  .logo-img {
+    width: 46px;
+    height: 46px;
+  }
+
 }

@@ -1,4 +1,120 @@
-.page { padding: 2rem 1rem; }
-.page-card { max-width: 880px; margin: 0 auto; padding: 2rem; background: rgba(40, 40, 40, 0.98); border-radius: 26px; box-shadow: 0 18px 40px rgba(0,0,0,0.5); border: 1px solid #333333; }
-.page-card h2 { margin-top: 0; color: #ffffff; }
-.page-card p { color: #d4d4d4; line-height: 1.75; }
+.login-page {
+  min-height: calc(100vh - 86px);
+  display: grid;
+  place-items: center;
+  padding: clamp(1.25rem, 4vw, 3rem);
+}
+
+.login-card {
+  width: min(100%, 430px);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  background: rgba(40, 40, 40, 0.98);
+  border: 1px solid #333333;
+  border-radius: 8px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.login-header img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.login-header p {
+  margin: 0 0 0.35rem;
+  color: #c69b4d;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.login-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.login-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.login-form span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.login-form input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #565656;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2420;
+  font: inherit;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #c69b4d;
+  box-shadow: 0 0 0 3px rgba(198, 155, 77, 0.24);
+}
+
+.login-form button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 0.35rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.9rem 1.35rem;
+  background: #c69b4d;
+  color: #1f2420;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.login-form button:hover,
+.login-form button:focus-visible {
+  background: #d8ad5d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 520px) {
+  .login-page {
+    align-items: start;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-header {
+    align-items: flex-start;
+  }
+
+  .login-header img {
+    width: 54px;
+    height: 54px;
+  }
+}
