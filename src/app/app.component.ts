@@ -14,4 +14,13 @@ export class AppComponent {
   get isAdminPage(): boolean {
     return this.router.url.startsWith('/admin');
   }
+
+  get showHero(): boolean {
+    return (
+      !this.isAdminPage &&
+      !this.router.url.startsWith('/contato/fale-conosco') &&
+      !this.router.url.startsWith('/contato/on-de-nos-encontrar') &&
+      !this.router.url.startsWith('/pedido-oracao')
+    );
+  }
 }

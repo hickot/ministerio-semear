@@ -2,6 +2,24 @@
   <div class="page-card">
     <h2>Pedido de Oração</h2>
     <p>Envie seu pedido de oração e nosso ministério irá interceder por você.</p>
-    <p>Em breve estará disponível um formulário para você enviar seu pedido diretamente por aqui.</p>
+
+    <form class="prayer-form">
+      <label>
+        <span>Nome</span>
+        <input type="text" name="nome" autocomplete="name" required />
+      </label>
+
+      <label>
+        <span>Assunto</span>
+        <input type="text" name="assunto" required />
+      </label>
+
+      <label>
+        <span>Mensagem</span>
+        <textarea name="mensagem" rows="6" required></textarea>
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 </section>
